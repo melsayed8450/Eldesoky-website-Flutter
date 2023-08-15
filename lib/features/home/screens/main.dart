@@ -1,4 +1,5 @@
 import 'package:eldesoky_website/common/utils/app_colors.dart';
+import 'package:eldesoky_website/features/home/screens/chat.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -38,7 +39,8 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
       ),
       const NewsPage(),
       const GalleryPage(),
-      const ContactPage(),
+      ContactPage(),
+      const ChatPage(),
     ];
     return pages[index];
   }
@@ -77,7 +79,6 @@ class _MainPageState extends State<MainPage> with TickerProviderStateMixin {
                           controller: tabController,
                           overlayColor: MaterialStateColor.resolveWith(
                               (states) => Colors.transparent),
-                          indicatorColor: Colors.black,
                           dividerColor: Colors.transparent,
                           indicator: MyTabIndicator(),
                           labelStyle: GoogleFonts.robotoSlab(

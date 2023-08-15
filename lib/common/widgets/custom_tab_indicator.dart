@@ -20,13 +20,13 @@ class _MyTabIndicatorPainter extends BoxPainter {
     final Paint paint = Paint();
     paint.color = AppColors.primaryColor;
 
-    const double lineHeight = 1.3;
+    const double lineHeight = 2.8;
     const double lineGap = 6.0;
     final double line1Y = rect.bottom - lineHeight - lineGap;
     final double line1Width = rect.width * 0.35;
 
     canvas.drawRect(
-      Rect.fromLTWH(rect.left + 17, line1Y, line1Width, lineHeight),
+      Rect.fromLTWH(rect.left + 17, line1Y, line1Width * 1.2, lineHeight),
       paint,
     );
     // canvas.drawRect(
