@@ -3,7 +3,7 @@ import 'package:eldesoky_website/models/team_member_model.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController {
-  final currentPage = 4.obs;
+  final currentPage = 0.obs;
   final teamMember1 = 0.obs;
   final teamMember2 = 1.obs;
   final teamMember3 = 2.obs;
